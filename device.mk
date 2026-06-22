@@ -112,5 +112,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/manet/manet-vendor.mk)
+# Inherit the proprietary files (disabled for recovery-only build)
+# $(call inherit-product, vendor/xiaomi/manet/manet-vendor.mk)

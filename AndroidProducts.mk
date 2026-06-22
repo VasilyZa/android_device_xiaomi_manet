@@ -5,9 +5,12 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_manet.mk
+    $(LOCAL_DIR)/lineage_manet.mk \
+    $(LOCAL_DIR)/twrp_manet.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_manet-user \
     lineage_manet-userdebug \
-    lineage_manet-eng
+    lineage_manet-eng \
+    twrp_manet-eng \
+    twrp_manet-userdebug

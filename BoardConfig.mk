@@ -162,5 +162,8 @@ DEVICE_MANIFEST_PINEAPPLE_FILES := \
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml
 
-# Inherit the proprietary files
-include vendor/xiaomi/manet/BoardConfigVendor.mk
+# Inherit the proprietary files (disabled for recovery-only build)
+# include vendor/xiaomi/manet/BoardConfigVendor.mk
+
+# OrangeFox 配置
+-include $(DEVICE_PATH)/OrangeFoxConfig.mk
